@@ -62,7 +62,6 @@ const Game: FC<props> = ({ a, b, server, update }) => {
         const uri = 'http://localhost:5000/updateWinner';
         const body: user = Object.assign({}, winner);
         const winnerPoints: number = points['a'] > points['b'] ? points['a'] : points['b'];
-        debugger;
         body['cumulative_points'] += winnerPoints;
 
         const result = await fetch(uri, {
