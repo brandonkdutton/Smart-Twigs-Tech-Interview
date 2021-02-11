@@ -26,6 +26,9 @@ class UserSchema(ma.SQLAlchemyAutoSchema):
         model = User
 
 
+db.create_all()
+
+
 @app.route("/createUser", methods=["POST"])
 def create_user():
     json_data = request.get_json(force=True)
