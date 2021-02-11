@@ -1,3 +1,8 @@
+Please note:
+
+1. If the " venv/bin/activate" command fails, you are probably missing the "." at the beginning. try ". venv/bin/activate"
+2. This uses an sqlite3 database so that it can be easily run locally, but the config can be edited to use a real relational database.
+
 To install:
 
 From within the 'front-end' directory run the following commands:
@@ -20,5 +25,3 @@ Now from within the 'front-end' directory run the following commands:
 1. $npm start
 
 navigate to http://localhost:3000
-
-Please Note: This uses an sqlite3 database so that it can be easily run locally, but the config file can be edited to use a real relational database.
